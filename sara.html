@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Festa da Sara</title>
+
+<style>
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(45deg,#000000,#2b004d,#000000,#4b0082);
+background-size:400% 400%;
+animation:fundo 8s infinite alternate;
+text-align:center;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes fundo{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+h1{
+font-size:70px;
+margin-top:60px;
+text-shadow:0 0 20px #a100ff;
+animation:pulsar 1.5s infinite;
+}
+
+@keyframes pulsar{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+.sub{
+font-size:22px;
+opacity:0.9;
+}
+
+.botao{
+display:inline-block;
+margin-top:30px;
+padding:18px 40px;
+font-size:22px;
+border-radius:40px;
+background:linear-gradient(45deg,#a100ff,#ff00ff);
+color:white;
+text-decoration:none;
+box-shadow:0 0 20px #a100ff;
+transition:0.3s;
+}
+
+.botao:hover{
+transform:scale(1.1);
+box-shadow:0 0 40px #ff00ff;
+}
+
+.galeria{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.galeria img{
+width:100%;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 0 15px purple;
+}
+
+.galeria img:hover{
+transform:scale(1.1) rotate(2deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎉 SEXO GRATUITO NA FESTA DA SARA  🎉</h1>
+<p class="sub">A festa mais comentada da noite levem a sua camisinha</p>
+
+<a class="botao" href="https://wa.me/5511985762788/" target="_blank">
+🔥 Clique para entrar 🔥
+</a>
+
+<div class="galeria">
+
+<!-- TROQUE PELAS FOTOS QUE VOCÊ QUISER -->
+ <img src="IMG/FOTO1.png" alt="Foto 1">
+ <img src="IMG/FOTO2.png" alt="">
+  <img src="IMG/FOTO3.png" alt="">
+   <img src="IMG/FOTO4.png" alt="">
+</div>
+
+<script>
+
+setInterval(()=>{
+
+const luz = document.createElement("div");
+
+luz.style.position="fixed";
+luz.style.top="0";
+luz.style.left=Math.random()*window.innerWidth+"px";
+luz.style.width="5px";
+luz.style.height="5px";
+luz.style.background="violet";
+luz.style.boxShadow="0 0 10px purple";
+luz.style.borderRadius="50%";
+luz.style.animation="cair 3s linear";
+
+document.body.appendChild(luz);
+
+setTimeout(()=>{luz.remove()},3000);
+
+},120);
+
+</script>
+
+<style>
+@keyframes cair{
+0%{transform:translateY(0)}
+100%{transform:translateY(100vh)}
+}
+</style>
+
+</body>
+</html>
